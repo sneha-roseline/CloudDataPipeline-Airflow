@@ -40,7 +40,7 @@ If you haven't already, install the AWS Command Line Interface (CLI) on your loc
 ***<ins>Step 4:<ins>*** Create an Amazon Elastic Compute Cloud (EC2) instance with Identity and Access Management (IAM) roles that allow it to interact with Amazon S3
 - Log in to the AWS Management Console.
 - Launch an EC2 Instance
-- Create an IAM Role and attach IAM Role to EC2 Instance, make sure the IAM has AmazonS3FullAccess, AmazonEC2FullAccess, AWSGlueConsoleFullAccess
+- Create an IAM Role and attach IAM Role to EC2 Instance, make sure it has AmazonS3FullAccess, AmazonEC2FullAccess, AWSGlueConsoleFullAccess group policies attached.
 
 ***<ins>Step 5:<ins>*** Upload the python scripts to an Amazon EC2 instance (in the cloud) 
 - Command in terminal: scp -i /path/to/your/key.pem /path/to/your/local/script.py ubuntu@ec2-instance-ip:/path/to/remote/directory/
