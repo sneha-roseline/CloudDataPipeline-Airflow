@@ -42,8 +42,9 @@ If you haven't already, install the AWS Command Line Interface (CLI) on your loc
 - Launch an EC2 Instance
 - Create an IAM Role and attach IAM Role to EC2 Instance, make sure the IAM has AmazonS3FullAccess, AmazonEC2FullAccess, AWSGlueConsoleFullAccess
 
-***<ins>Step 5:<ins>*** upload a fetch Python and DAG python scripts from your local directory to an Amazon EC2 instance (in the cloud)
-  Command in terminal: scp -i /path/to/your/key.pem /path/to/your/local/script.py ubuntu@ec2-instance-ip:/path/to/remote/directory/
+***<ins>Step 5:<ins>*** Upload the python scripts to an Amazon EC2 instance (in the cloud) 
+- Command in terminal: scp -i /path/to/your/key.pem /path/to/your/local/script.py ubuntu@ec2-instance-ip:/path/to/remote/directory/
+- Ensure that the news_fetcher_etl.py(python script to fetch data using API) module exists in the same directory as your DAG file (news_automation_dag.py)
 
 ***<ins>Step 4:<ins>*** Create S3 Buckets
 - Navigate to the S3 service.
