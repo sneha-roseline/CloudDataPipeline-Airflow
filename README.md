@@ -3,7 +3,7 @@
 
 ## Description
 
-The project will fetch new related to a specific topic using News API by writing an ETL Python script and create a data pipeline that consumes the news data. 
+The project will fetch news data related to a specific topic using News API by writing an ETL Python script and create a data pipeline that consumes the news data. 
 The data coming in will be fetched based on a specific topic chosen to extract in our python script and extract the data in parquet format and directly stored on the AWS S3 landing bucket.
 Built an ETL pipeline that would use AWS Glue to to load data from S3 landing bucket. In the ETL batch job, 
 AWS glue involves using AWS glue crawler to crawl the data in S3 bucket to infer schemas and create a data catalogue. Transformations are applied and the results are store back to a destination s3 bucket.
